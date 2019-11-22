@@ -1,0 +1,53 @@
+@import "index";
+
+.section_clients {
+  .container {
+    padding-top: 8%;
+
+    .row {
+      .section_clients_logos-item {
+        line-height: 60px;
+      }
+
+      .section_clients_quote-block {
+        .section_clients_quote-text {
+          text-align: center;
+          line-height: 30px;
+          font-size: 18px;
+          font-family: "Roboto Slab", Serif;
+          font-style: italic;
+
+          &:last-of-type {
+            position: relative;
+
+            margin: 40px 0;
+
+            font-size: 20px;
+            font-style: unset;
+          }
+        }
+
+        .section_clients_divider-dots {
+          margin: auto;
+
+          width: fit-content;
+
+          .section_clients_dots-element {
+            display: inline-block;
+            margin: 0 5px auto;
+
+            width: 15px;
+            height: 15px;
+
+            background-color: #777777;
+            border-radius: 50%;
+
+            &:hover {
+              background-color: #c0301c;
+            }
+          }
+        }
+      }
+    }
+  }
+}

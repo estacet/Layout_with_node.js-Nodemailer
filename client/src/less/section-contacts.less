@@ -1,0 +1,139 @@
+@import "index";
+
+.contact-us_form-style {
+  margin-right: 30px;
+  margin-bottom: 20px;
+
+  width: 350px;
+  height: 40px;
+  padding-left: 20px;
+
+  border: 1px solid black;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Roboto Slab", Serif;
+}
+
+.contact-us_form-hover {
+  border-bottom: 1px solid #c0301c;
+  border-top: 1px solid #c0301c;
+}
+
+.section-contacts {
+  .container {
+    padding-bottom: 5.7%;
+
+    .section_contacts_header {
+      text-align: center;
+
+      .section_contacts_title {
+        .title;
+        padding-top: 190px;
+      }
+
+      .section_contacts_divider {
+        .divider;
+      }
+
+      .section_contacts_subtitle {
+        .subtitle;
+      }
+    }
+
+    .section_contacts_contact-info {
+      .contact-info-item {
+        margin-bottom: 8.5%;
+
+        .contact-info-item_headline {
+          display: inline-block;
+          margin: 0 0 0 10px;
+
+          font-family: "Montserrat", SansSerif;
+          font-size: 14px;
+        }
+
+        .contact-info-item_text {
+          display: block;
+          margin-top: 20px;
+
+          line-height: 20px;
+          font-size: 12px;
+          font-family: "Roboto Slab", Serif;
+          color: black;
+
+          a {
+            color: black;
+
+            &:hover {
+              text-decoration: none;
+              color: #2b669a;
+            }
+          }
+        }
+      }
+    }
+
+    .section_contacts_form {
+      input {
+        .contact-us_form-style;
+
+        &:hover {
+          .contact-us_form-hover;
+        }
+
+        .second {
+          margin-right: 0;
+        }
+      }
+
+      textarea {
+        .contact-us_form-style;
+
+        width: 730px;
+        height: 100px;
+        max-width: 730px;
+        max-height: 200px;
+        min-height: 100px;
+
+        padding: 15px;
+
+        &:hover {
+          .contact-us_form-hover;
+        }
+
+        @media screen and  (max-width: 1000px) {
+          width: 500px;
+        }
+
+        @media screen and  (max-width: 800px) {
+          width: 380px;
+        }
+      }
+
+      .section_contacts_form-button {
+        .contact-us_form-style;
+        padding-left: 0;
+        width: 170px;
+
+        background-color: white;
+
+        &:hover {
+          background-color: #c0301c;
+          color: white;
+        }
+      }
+
+      .section_contacts_form-message {
+        display: inline-block;
+
+        font-size: 12px;
+        font-family: "Roboto Slab", Serif;
+
+        .asterisk {
+          color: #c0301c;
+        }
+      }
+    }
+  }
+}
