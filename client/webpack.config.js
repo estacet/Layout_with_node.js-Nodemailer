@@ -59,11 +59,7 @@ module.exports = {
                         loader: 'image-webpack-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: '../content/',
-                            gifsicle: {
-                                optimizationLevel: 7,
-                                interlaced: false
-                            }
+                            outputPath: '../content/'
                         }
                     },
                     {
@@ -71,10 +67,6 @@ module.exports = {
                         options: {
                             name: '[name].[ext]',
                             outputPath: '../content/',
-                            gifsicle: {
-                                optimizationLevel: 7,
-                                interlaced: false
-                            }
                         }
                     }
                 ]
