@@ -47,7 +47,8 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: '../fonts/'
+                            outputPath: 'fonts',
+                            publicPath: '../fonts'
                         }
                     }
                 ]
@@ -59,14 +60,16 @@ module.exports = {
                         loader: 'image-webpack-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: '../content/'
+                            outputPath: 'content',
+                            publicPath: '../content'
                         }
                     },
                     {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: '../content/',
+                            outputPath: 'content',
+                            publicPath: '../content'
                         }
                     }
                 ]
@@ -82,11 +85,11 @@ module.exports = {
 
         new CopyWebpackPlugin([
             {
-                from: './src/fonts', to: '../fonts'
+                from: './src/fonts', to: 'fonts'
             }
             ,
             {
-                from: './src/content', to: '../content'
+                from: './src/content', to: 'content'
             }
         ]),
 
